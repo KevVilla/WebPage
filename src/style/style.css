@@ -1,0 +1,448 @@
+:root{
+    --letter-color:#ffffff;
+    --mural-color: #000000 ;
+    --mural-skills: #232123;
+}
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("../fonts/PressStart2P-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body{
+    position:relative;
+}
+header,main,footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header{
+    background-color: var(--mural-color);
+    height: 12vh;
+    position: fixed;
+    transition: all .8s;
+    z-index: 9999;
+}
+header.sticky{
+    height: 10vh;
+    background-color: var(--letter-color);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+    transition: all .8s;
+}
+header.sticky .header-title{
+    color: var(--mural-color);
+}
+header.sticky .header-nav ul li a{
+    color: var(--mural-color);
+}
+.container {
+    width: 90%;
+    display: flex;
+    /* padding-top: 20px;  */
+}
+header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title {
+    font-family: "Press Start 2P", cursive;
+    color: var(--letter-color);
+}
+.header-nav ul{
+    display: flex;
+}
+.header_menu-close{
+    display: none;
+}
+.header-nav img{
+    display: none;
+    color: white;
+}
+.header-nav ul li{
+    list-style-type: none;
+    padding: 10px 5px;
+    margin-left: 10px;
+    width: 90px;
+    transition: all .3s;
+}
+.header-nav ul li:hover{
+    transform: scale(1.1);
+}
+.header-nav ul li:hover a{
+    /* font-size: 18px; */
+    font-weight: bold;
+}
+.header-nav ul li a{
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    color: var(--letter-color);
+}
+main{
+    flex-direction: column;
+}
+main .home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--mural-color);
+    display: flex;
+    justify-content: center;
+}
+main .home .container{
+    justify-content: space-between;
+    align-items: center;
+}
+main .home-description{
+    font-family: "Lato", sans-serif;
+    color: var(--letter-color);
+    /* margin-bottom: 100px; */
+}
+.home-description h2,.home-description h3,.home-description h4{
+    margin-top:10px;
+}
+.home-description h3{
+    font-size: 40px;
+}
+.home-description h2{
+    font-size: 45px;
+}
+.home-description h4{
+    font-size: 30px;
+}
+.home_image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_image-container img{
+    width: 320px;
+}
+main .aboutMe{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--letter-color);
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+}
+main .aboutMe .container{
+    padding: 10vh 0 10vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutMe-title{
+    font-family: "Press Start 2P", cursive;
+    font-size: 30px;
+    text-align: center;
+    margin:10vh 0 20px;
+    padding: 20px 0 10px;
+}
+.aboutMe-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 50px; */
+}
+.aboutMe-information .aboutMe-description{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height:100%;
+    justify-content: space-around;
+}
+.aboutMe-information .aboutMe-description_title{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+.aboutMe-information .aboutMe-description_info{
+    /* font-size: 17px; */
+    text-align: justify;
+    font-family: 'Source Code Pro', monospace;
+}
+.aboutMe_image-container{
+    height:100%;
+    width:50%;
+}
+.aboutMe_image-container img{
+    height: 100%;
+    width: 100%;
+}
+main .skills{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--mural-color);
+    color: var(--letter-color);
+    
+}
+main .skills .container{
+    padding: 10vh 0 10vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.skills-title{
+    font-family: "Press Start 2P", cursive;
+    font-size: 30px;
+    text-align: center;
+    margin:10vh 0 20px;
+    padding: 20px 0 10px;
+}
+.skills-information{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.skills-information .skills-description{
+    background-color: var(--mural-skills);
+    padding: 30px 20px;
+}
+.skills-information .skills-description_title{
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    border-bottom: 1px solid var(--letter-color);
+}
+.skills-description-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.skills-description_icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills_icon-title{
+    margin-bottom: 10px;
+    font-family: 'Source Code Pro', monospace;
+}
+.skill_icon-image{
+    width: 60px;
+    height: 60px;
+}
+
+
+footer{
+    background-color: var(--mural-color);
+    color: white;
+    height: 200px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-top-style: dashed;
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contactme-title{
+    font-family: "Press Start 2P", cursive;
+    margin: 10px 0 20px;
+    font-size: 30px;
+}
+footer .container figure a{
+    text-decoration: none;
+}
+footer .contact-image{
+    margin: 10px 10px;
+    width: 45px;
+}
+footer .container p{
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+@media screen and (max-width:1024px){
+    .header-nav ul{
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        transition: .5s;
+    }
+    .header-nav ul li {
+        width: 150px;
+    }
+    .header_menu-close{
+        display: block;
+        width: auto !important;
+        position: absolute;
+        top: 15px;
+        right: 40px;
+    }
+    .showMenu{
+        left: 0 !important;
+    }
+    .toggleMenu{
+        display: none !important;
+    }
+    .showMenu_list{
+        color: var(--mural-color) !important;
+        font-size: 1.5em;
+    }
+    .header-nav img{
+        display: block;
+        width: 40px;
+        cursor: pointer;
+        filter: invert(1);
+    }
+    .changeColor{
+        filter: invert(0) !important;
+        display:block;
+    }
+
+    .home-description h2{
+        font-size: 40px;
+    }
+    .home-description h3{
+        font-size: 35px;
+    }
+    .home-description h4{
+        font-size: 25px;
+    }
+    .home_image-container img{
+        width: 300px;
+    }
+    .aboutMe-information .aboutMe-description{
+        width: 60%;
+    }
+    .aboutMe_image-container{
+        width:40%;
+    }
+    .skills-information .skills-description {
+        padding: 30px 10px;
+    }
+    .skills-description-container {
+        grid-template-columns: 1.3fr 1fr 1.3fr;
+    }
+   
+}
+@media screen and (max-width:768px){
+    .header-title{
+        font-size: 1.6em;
+    }
+    main .home-description{
+        position: absolute;
+        z-index: 1;
+    }
+    .home-description h2{
+        font-size: 35px;
+    }
+    .home-description h3{
+        font-size: 30px;
+    }
+    .home-description h4{
+        font-size: 20px;
+    }
+    .home_image-container img{
+        width: 300px;
+        opacity: 0.6;
+    }
+    .home_image-container{
+        position: absolute;
+        width: 100%;
+        top: 8%;
+        right: 10px;
+    }
+    .aboutMe-information .aboutMe-description{
+        width: 100%;
+    }
+    .aboutMe-title,.skills-title,.contactme-title{
+        font-size: 25px;
+    }
+    .aboutMe-information .aboutMe-description_info{
+        font-size: 15px;
+    }
+    .aboutMe-information{
+        flex-direction: column;
+    }
+    .aboutMe_image-container{
+        width: 100%;
+    }
+    main .skills{
+        height: auto;
+    }
+    .skills-information{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .skills-information .skills-description_title{
+        font-size: 17px;
+    }
+    .skills_icon-title{
+        font-size: 15px;
+    }
+    .skills-description-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .skills-information .skills-description {
+        padding: 30px 20px;
+    }
+    footer .contact-image {
+        width: 40px;
+    }
+}
+@media screen and (max-width:576px){
+    .header-title{
+        font-size: 1.4em;
+    }
+    main .home-description{
+        position: absolute;
+        z-index: 1;
+    }
+    .home-description h2{
+        font-size: 30px;
+    }
+    .home-description h3{
+        font-size: 25px;
+    }
+    .home-description h4{
+        font-size: 20px;
+    }
+    .home_image-container{
+        position: absolute;
+        width: 100%;
+        top: 8%;
+        right: 10px;
+    }
+    .home_image-container img{
+        width: 280px;
+        opacity: 0.6;
+    }
+    .aboutMe-title,.skills-title,.contactme-title{
+        font-size: 20px;
+    }
+    .aboutMe-information .aboutMe-description_info{
+        font-size: 15px;
+    }
+    
+    .aboutMe-information .aboutMe-description_title{
+        font-size: 20px;
+    }
+    
+    footer .contact-image {
+        width: 35px;
+    }
+    footer .container p{
+        font-size: 15px;
+    }
+}
