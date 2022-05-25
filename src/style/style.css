@@ -231,6 +231,90 @@ main .skills .container{
     height: 60px;
 }
 
+main .proyects{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--letter-color);
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+}
+main .proyects .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto repeat(2,300px);
+    align-content: center;
+    gap: 20px;
+}
+.proyects .container .proyect-title{
+    grid-column: 1/-1;
+    font-family: "Press Start 2P", cursive ;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0 10px;
+}
+.proyects .proyect--container{
+    background-color: var(--mural-skills);
+    color: var(--letter-color);
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.proyects .proyect--container .proyect-subtitle{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.proyects .proyect--container .proyect-image--container{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    
+}
+.proyects .proyect--container .proyect-image{
+    width: 80%;
+    height: 100%;
+    cursor: pointer;
+}
+.proyects .proyect--container .proyect-view{
+    position: absolute;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: 'Source Code Pro',monospace;
+    color: var(--letter-color);
+    border: none;
+    width: 80%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: all 1s;
+}
+.proyects .proyect--container .proyect-image--container:hover .proyect-view{
+    display: flex;
+}
+.proyects .proyect--container .proyect-stacks--container{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.proyects .proyect--container .proyect-stacks--container p{
+    font-family: 'Source Code Pro',monospace;
+    justify-self: flex-start;
+}
+.proyects .proyect-stacks--container img{
+    width: 40px;
+}
+
 
 footer{
     background-color: var(--mural-color);

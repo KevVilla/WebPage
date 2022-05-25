@@ -1,225 +1,265 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style/style.css" />
 
-    <title>KevVilla</title>
-  </head>
-  <body>
-    <header class="header" id="header-container">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+
+  <title>KevVilla</title>
+</head>
+
+<body>
+  <header class="header" id="header-container">
+    <div class="container">
+      <h1 class="header-title">PORTAFOLIO</h1>
+      <nav class="header-nav">
+        <ul id="header_menu">
+          <li class="header_menu-close">
+            <img class="" src="./src/icons/icons8-eliminar.svg" alt="">
+          </li>
+          <li onclick="toggleMenu()">
+            <a class="header_menu-list" href="#">Inicio</a>
+          </li>
+          <li onclick="toggleMenu()">
+            <a class="header_menu-list" href="#aboutme">About me</a>
+          </li>
+          <li onclick="toggleMenu()">
+            <a class="header_menu-list" href="#skills">Skills</a>
+          </li>
+          <li onclick="toggleMenu()">
+            <a class="header_menu-list" href="#proyects">Work</a>
+          </li>
+          <li onclick="toggleMenu()">
+            <a class="header_menu-list" href="#contactme">Contact</a>
+          </li>
+        </ul>
+        <img id="header-icon_menu" src="./src/icons/icons8-menú.svg" alt="">
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="home">
       <div class="container">
-        <h1 class="header-title">PORTAFOLIO</h1>
-        <nav class="header-nav">
-          <ul id="header_menu">
-            <li class="header_menu-close">
-              <img class="" src="./src/icons/icons8-eliminar.svg" alt="">
-            </li>
-            <li onclick="toggleMenu()">
-              <a class="header_menu-list" href="#">Inicio</a>
-            </li>
-            <li onclick="toggleMenu()">
-              <a class="header_menu-list" href="#aboutme">About me</a>
-            </li>
-            <li onclick="toggleMenu()">
-              <a class="header_menu-list" href="#skills">Skills</a>
-            </li>
-            <li onclick="toggleMenu()">
-              <a class="header_menu-list"  href="#">Work</a>
-            </li>
-            <li onclick="toggleMenu()">
-              <a class="header_menu-list" href="#contactme">Contact</a>
-            </li>
-          </ul>
-          <img id="header-icon_menu" src="./src/icons/icons8-menú.svg" alt="">
-        </nav>
+        <article class="home-description">
+          <h3>Hello, I'm</h3>
+          <h2>Kevin Alexander Lujan Bernaola</h2>
+          <h4>I'm a Front End Web Developer</h4>
+        </article>
+        <figure class="home_image-container">
+          <img src="./src/images/home.png" />
+        </figure>
       </div>
-    </header>
-    <main>
-      <section class="home">
-        <div class="container">
-          <article class="home-description">
-            <h3>Hello, I'm</h3>
-            <h2>Kevin Alexander Lujan Bernaola</h2>
-            <h4>I'm a Front End Web Developer</h4>
+    </section>
+    <section class="aboutMe" id="aboutme">
+      <div class="container">
+        <h2 class="aboutMe-title">ABOUT ME</h2>
+        <div class="aboutMe-information">
+          <article class="aboutMe-description">
+            <h3 class="aboutMe-description_title">I'm Front End Developer</h3>
+            <p class="aboutMe-description_info">
+              My name is Kevin Lujan and I am an systems engenieer of the Universisty National Federico Villarreal from
+              Perú. I like web programming specially frontend programming using javascript technologies. But i want to
+              specialize in being a Developer Fullstack using others lenguages programming.
+              <br />
+              My hobbies are programming, study development courses and also play soccer and training calisthenics. The
+              qualities that stand out the most for me are teamwork, working under pressure and being a self-taught
+              person.
+            </p>
           </article>
-          <figure class="home_image-container">
-            <img src="./src/images/home.png" />
+          <figure class="aboutMe_image-container">
+            <img src="./src/images/aboutme.png" />
           </figure>
         </div>
-      </section>
-      <section class="aboutMe" id="aboutme">
-        <div class="container">
-          <h2 class="aboutMe-title">ABOUT ME</h2>
-          <div class="aboutMe-information">
-            <article class="aboutMe-description">
-              <h3 class="aboutMe-description_title">I'm Front End Developer</h3>
-              <p class="aboutMe-description_info">
-                My name is Kevin Lujan and I am an systems engenieer of the Universisty National Federico Villarreal from Perú. I like web programming specially frontend programming using javascript technologies. But i want to specialize in being a Developer Fullstack using others lenguages programming. 
-                <br />
-                My hobbies are programming, study development courses and also play soccer and training calisthenics. The qualities that stand out the most for me are teamwork, working under pressure and being a self-taught person.
-              </p>
-            </article>
-            <figure class="aboutMe_image-container">
-              <img src="./src/images/aboutme.png" />
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="skills-title">SKILLS</h2>
+        <div class="skills-information">
+          <article class="skills-description">
+            <h3 class="skills-description_title">Design web</h3>
+            <figure class="skills-description-container">
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">HTML 5</p>
+                <img src="./src/icons/icons8-html-5.svg" alt="" class="skill_icon-image" />
+              </div>
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">CSS 3</p>
+                <img src="./src/icons/icons8-css3.svg" alt="" class="skill_icon-image" />
+              </div>
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">Javascript E6</p>
+                <img src="./src/icons/icons8-javascript.svg" alt="" class="skill_icon-image" />
+              </div>
             </figure>
-          </div>
-        </div>
-      </section>
-      <section class="skills" id="skills">
-        <div class="container">
-          <h2 class="skills-title">SKILLS</h2>
-          <div class="skills-information">
-            <article class="skills-description">
-              <h3 class="skills-description_title">Design web</h3>
-              <figure class="skills-description-container">
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">HTML 5</p>
-                  <img
-                    src="./src/icons/icons8-html-5.svg"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">CSS 3</p>
-                  <img
-                    src="./src/icons/icons8-css3.svg"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">Javascript E6</p>
-                  <img
-                    src="./src/icons/icons8-javascript.svg"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-              </figure>
-            </article>
-            <article class="skills-description">
-              <h3 class="skills-description_title">Javascript Frameworks</h3>
-              <figure class="skills-description-container">
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">Vue JS</p>
-                  <img
-                    src="./src/icons/icons8-vue-js.svg"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">React JS</p>
-                  <img
-                    src="./src/icons/icons8-reaccionar-nativo.svg"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">JQuery</p>
-                  <img
-                    src="./src/images/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-48.png"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-              </figure>
-            </article>
-            <article class="skills-description">
-              <h3 class="skills-description_title">CSS Frameworks</h3>
-              <figure class="skills-description-container">
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">Boostrap</p>
-                  <img
-                    src="./src/icons/icons8-oreja.svg"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">Sass</p>
-                  <img
-                    src="./src/icons/icons8-sass-avatar.svg"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">Tailwind CSS</p>
-                  <img
-                    src="./src/icons/tailwindcss-icon.svg"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-              </figure>
-            </article>
-            <article class="skills-description">
-              <h3 class="skills-description_title">Other Skills</h3>
-              <figure class="skills-description-container">
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">MySQL</p>
-                  <img
-                    src="./src/icons/icons8-logo-de-mysql.svg"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">Figma</p>
-                  <img
-                    src="./src/icons/icons8-figma.svg"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-                <div class="skills-description_icon">
-                  <p class="skills_icon-title">Visual Code</p>
-                  <img
-                    src="./src/icons/icons8-visual-studio-code-2019.svg"
-                    alt=""
-                    class="skill_icon-image"
-                  />
-                </div>
-              </figure>
-            </article>
-            <!-- <figure class="skills_image-container">
+          </article>
+          <article class="skills-description">
+            <h3 class="skills-description_title">Javascript Frameworks</h3>
+            <figure class="skills-description-container">
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">Vue JS</p>
+                <img src="./src/icons/icons8-vue-js.svg" alt="" class="skill_icon-image" />
+              </div>
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">React JS</p>
+                <img src="./src/icons/icons8-reaccionar-nativo.svg" alt="" class="skill_icon-image" />
+              </div>
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">JQuery</p>
+                <img src="./src/images/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-48.png" alt=""
+                  class="skill_icon-image" />
+              </div>
+            </figure>
+          </article>
+          <article class="skills-description">
+            <h3 class="skills-description_title">CSS Frameworks</h3>
+            <figure class="skills-description-container">
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">Boostrap</p>
+                <img src="./src/icons/icons8-oreja.svg" alt="" class="skill_icon-image" />
+              </div>
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">Sass</p>
+                <img src="./src/icons/icons8-sass-avatar.svg" alt="" class="skill_icon-image" />
+              </div>
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">Tailwind CSS</p>
+                <img src="./src/icons/tailwindcss-icon.svg" alt="" class="skill_icon-image" />
+              </div>
+            </figure>
+          </article>
+          <article class="skills-description">
+            <h3 class="skills-description_title">Other Skills</h3>
+            <figure class="skills-description-container">
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">MySQL</p>
+                <img src="./src/icons/icons8-logo-de-mysql.svg" alt="" class="skill_icon-image" />
+              </div>
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">Figma</p>
+                <img src="./src/icons/icons8-figma.svg" alt="" class="skill_icon-image" />
+              </div>
+              <div class="skills-description_icon">
+                <p class="skills_icon-title">Visual Code</p>
+                <img src="./src/icons/icons8-visual-studio-code-2019.svg" alt="" class="skill_icon-image" />
+              </div>
+            </figure>
+          </article>
+          <!-- <figure class="skills_image-container">
               <img src="./src/images/aboutme.png" />
             </figure> -->
-          </div>
         </div>
-      </section>
-    </main>
-    <footer id="contactme">
+      </div>
+    </section>
+    <section class="proyects" id="proyects">
       <div class="container">
-        <h2 class="contactme-title">Contact me</h2>
-        <figure>
-          <a href="https://www.linkedin.com/in/kevin-alexander-lujan-bernaola-3b0025172">
-            <img src="./src/images/002-linkedin.png" alt="my linkedin" class="contact-image">
-          </a>
-          <a href="https://www.instagram.com/invites/contact/?i=12d4lp5qhfepm&utm_content=w7cglx">
-            <img src="./src/images/001-instagram.png" alt="my instagram" class="contact-image">
-          </a>
-          <!-- <a href="https://www.facebook.com/kevin.lujanber">
+        <h3 class="proyect-title">My proyects</h3>
+        <div class="proyect--container">
+          <h4 class="proyect-subtitle">CRUD de veterinaria</h4>
+          <figure class="proyect-image--container">
+            <img class="proyect-image" src="./src/images/proyects/veterinaria-fondo.png" alt="">
+            <div class="proyect-stacks--container">
+              <p>Stacks</p>
+              <img src="./src/icons/icons8-reaccionar-nativo.svg" alt="">
+              <img src="./src/icons/tailwindcss-icon.svg" alt="">
+              <img src="./src/icons/icons8-javascript.svg" alt="">
+            </div>
+            <a href="https://spontaneous-capybara-93b215.netlify.app/" target="_blank" class="proyect-view">Ver proyecto ▶️</a>
+          </figure>
+        </div>
+        <div class="proyect--container">
+          <h4 class="proyect-subtitle">CRUD de veterinaria</h4>
+          <figure class="proyect-image--container">
+            <img class="proyect-image" src="./src/images/proyects/veterinaria-fondo.png" alt="">
+            <div class="proyect-stacks--container">
+              <p>Stacks</p>
+              <img src="./src/icons/icons8-reaccionar-nativo.svg" alt="">
+              <img src="./src/icons/tailwindcss-icon.svg" alt="">
+              <img src="./src/icons/icons8-javascript.svg" alt="">
+            </div>
+            <a href="https://spontaneous-capybara-93b215.netlify.app/" target="_blank" class="proyect-view">Ver proyecto ▶️</a>
+          </figure>
+        </div>
+        <div class="proyect--container">
+          <h4 class="proyect-subtitle">CRUD de veterinaria</h4>
+          <figure class="proyect-image--container">
+            <img class="proyect-image" src="./src/images/proyects/veterinaria-fondo.png" alt="">
+            <div class="proyect-stacks--container">
+              <p>Stacks</p>
+              <img src="./src/icons/icons8-reaccionar-nativo.svg" alt="">
+              <img src="./src/icons/tailwindcss-icon.svg" alt="">
+              <img src="./src/icons/icons8-javascript.svg" alt="">
+            </div>
+            <a href="https://spontaneous-capybara-93b215.netlify.app/" target="_blank" class="proyect-view">Ver proyecto ▶️</a>
+          </figure>
+        </div>
+        <div class="proyect--container">
+          <h4 class="proyect-subtitle">CRUD de veterinaria</h4>
+          <figure class="proyect-image--container">
+            <img class="proyect-image" src="./src/images/proyects/veterinaria-fondo.png" alt="">
+            <div class="proyect-stacks--container">
+              <p>Stacks</p>
+              <img src="./src/icons/icons8-reaccionar-nativo.svg" alt="">
+              <img src="./src/icons/tailwindcss-icon.svg" alt="">
+              <img src="./src/icons/icons8-javascript.svg" alt="">
+            </div>
+            <a href="https://spontaneous-capybara-93b215.netlify.app/" target="_blank" class="proyect-view">Ver proyecto ▶️</a>
+          </figure>
+        </div>
+        <div class="proyect--container">
+          <h4 class="proyect-subtitle">CRUD de veterinaria</h4>
+          <figure class="proyect-image--container">
+            <img class="proyect-image" src="./src/images/proyects/veterinaria-fondo.png" alt="">
+            <div class="proyect-stacks--container">
+              <p>Stacks</p>
+              <img src="./src/icons/icons8-reaccionar-nativo.svg" alt="">
+              <img src="./src/icons/tailwindcss-icon.svg" alt="">
+              <img src="./src/icons/icons8-javascript.svg" alt="">
+            </div>
+            <a href="https://spontaneous-capybara-93b215.netlify.app/" target="_blank" class="proyect-view">Ver proyecto ▶️</a>
+          </figure>
+        </div>
+        <div class="proyect--container">
+          <h4 class="proyect-subtitle">CRUD de veterinaria</h4>
+          <figure class="proyect-image--container">
+            <img class="proyect-image" src="./src/images/proyects/veterinaria-fondo.png" alt="">
+            <div class="proyect-stacks--container">
+              <p>Stacks</p>
+              <img src="./src/icons/icons8-reaccionar-nativo.svg" alt="">
+              <img src="./src/icons/tailwindcss-icon.svg" alt="">
+              <img src="./src/icons/icons8-javascript.svg" alt="">
+            </div>
+            <a href="https://spontaneous-capybara-93b215.netlify.app/" target="_blank" class="proyect-view">Ver proyecto ▶️</a>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="contactme">
+    <div class="container">
+      <h2 class="contactme-title">Contact me</h2>
+      <figure>
+        <a href="https://www.linkedin.com/in/kevin-alexander-lujan-bernaola-3b0025172">
+          <img src="./src/images/002-linkedin.png" alt="my linkedin" class="contact-image">
+        </a>
+        <a href="https://www.instagram.com/invites/contact/?i=12d4lp5qhfepm&utm_content=w7cglx">
+          <img src="./src/images/001-instagram.png" alt="my instagram" class="contact-image">
+        </a>
+        <!-- <a href="https://www.facebook.com/kevin.lujanber">
             <img src="./src/images/003-facebook.png" alt="my facebook" class="contact-image">
           </a> -->
-        </figure>
-        <p>Copyright &copy 2021 KevVilla. All right reserved.</p>
-      </div>
-    </footer>
+      </figure>
+      <p>Copyright &copy 2021 KevVilla. All right reserved.</p>
+    </div>
+  </footer>
 
-    <script src="./src/main.js"></script>
-  </body>
+  <script src="./src/main.js"></script>
+</body>
+
 </html>
