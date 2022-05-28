@@ -40,12 +40,12 @@ header.sticky .header-title{
 header.sticky .header-nav ul li a{
     color: var(--mural-color);
 }
-.container {
+.container-me {
     width: 90%;
     display: flex;
     /* padding-top: 20px;  */
 }
-header .container{
+header .container-me{
     justify-content: space-between;
     align-items: center;
 }
@@ -92,7 +92,7 @@ main .home{
     display: flex;
     justify-content: center;
 }
-main .home .container{
+main .home .container-me{
     justify-content: space-between;
     align-items: center;
 }
@@ -129,7 +129,7 @@ main .aboutMe{
     justify-content: center;
     transition: all 1s;
 }
-main .aboutMe .container{
+main .aboutMe .container-me{
     padding: 10vh 0 10vh;
     flex-direction: column;
     justify-content: center;
@@ -181,7 +181,7 @@ main .skills{
     color: var(--letter-color);
     
 }
-main .skills .container{
+main .skills .container-me{
     padding: 10vh 0 10vh;
     flex-direction: column;
     justify-content: center;
@@ -239,14 +239,14 @@ main .proyects{
     justify-content: center;
     transition: all 1s;
 }
-main .proyects .container{
+main .proyects .container-me{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto repeat(2,300px);
     align-content: center;
     gap: 20px;
 }
-.proyects .container .proyect-title{
+.proyects .container-me .proyect-title{
     grid-column: 1/-1;
     font-family: "Press Start 2P", cursive ;
     font-size: 30px;
@@ -323,7 +323,7 @@ footer{
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-top-style: dashed;
 }
-footer .container{
+footer .container-me{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,14 +334,14 @@ footer .container{
     margin: 10px 0 20px;
     font-size: 30px;
 }
-footer .container figure a{
+footer .container-me figure a{
     text-decoration: none;
 }
 footer .contact-image{
     margin: 10px 10px;
     width: 45px;
 }
-footer .container p{
+footer .container-me p{
     text-align: center;
     margin: 10px 0;
     width: 100%;
@@ -416,6 +416,15 @@ footer .container p{
     .skills-description-container {
         grid-template-columns: 1.3fr 1fr 1.3fr;
     }
+    .proyects{
+        height: auto !important;
+    }
+    .proyects .container-me{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        grid-template-columns: repeat(2,1fr) !important;
+        grid-template-rows: auto repeat(3,300px) !important;
+    }
    
 }
 @media screen and (max-width:768px){
@@ -481,6 +490,10 @@ footer .container p{
     .skills-information .skills-description {
         padding: 30px 20px;
     }
+    .proyects .container-me{
+        grid-template-columns: repeat(1,1fr) !important;
+        grid-template-rows: auto repeat(5,300px) !important;
+    }
     footer .contact-image {
         width: 40px;
     }
@@ -526,7 +539,7 @@ footer .container p{
     footer .contact-image {
         width: 35px;
     }
-    footer .container p{
+    footer .container-me p{
         font-size: 15px;
     }
 }
